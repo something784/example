@@ -1,4 +1,4 @@
-from math import sqrt, ceil
+from math import sqrt
 class Vector:
     def __init__(self, x, y):
         self.x = x
@@ -13,8 +13,9 @@ class Vector:
         return sqrt(self.x**2 + self.y**2)
     def __complex__(self):
         return complex(self.x, self.y)
-vector = Vector(3, 4)
+vector = Vector(4, 16)
 print(vector)
 print(int(vector))
 print(float(vector))
 print(complex(vector))
+print(bool(vector))
